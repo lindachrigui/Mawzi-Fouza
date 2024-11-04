@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Signika-Bold';
+    src: url('../assets/fonts/Signika/static/Signika-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+font-family: 'Signika-Light';
+src: url('../assets/fonts/Signika/static/Signika-Light.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+.title{
+    text-align: center;
+    margin: 3.5%;
+}
+
+.title h1{
+    font-family: 'Signika-Bold';
+    font-size: 63px;
+}
+
+.title p{
+    font-family: 'Signika-Light';
+    font-size: 24px;
+    margin: 2%;
+    color: #797979;
+
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Quals {
+    background-color: aqua;
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute space between items */
+    padding: 15px;
+}
+
+.Quals-Content {
+    flex: 0 1 calc(50% - 30px); /* Adjust width calculation for extra margin */
+    margin: 15px 10px; /* Increased space between items */
+    box-sizing: border-box; /* Ensure padding and margin don't affect width */
+}
+
+.Pics{
+    background-color: #21cf2c;
+    width: 45%;
+}
