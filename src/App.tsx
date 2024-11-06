@@ -11,9 +11,7 @@ function App() {
       <section>
         <Figures />
       </section>
-      <section className="hero2">
-        <WhyChooseUs />
-      </section>
+      
     </div>
   );
 }
