@@ -5,16 +5,7 @@ import WhyChooseUs from "./components/WhyChooseUs";
 function App() {
   return (
     <div>
-      <section className="hero1">
-        <HomePage />
-      </section>
-      <section>
-        <Figures />
-      </section>
-      <section className="hero2">
-        <WhyChooseUs />
-      </section>
-    </div>
+      
   );
 }
 
