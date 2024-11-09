@@ -1,7 +1,9 @@
 import "./NavBar.css";
 import Logo from "../assets/images/Vector.png";
+import { useNavigate } from 'react-router-dom';
 
 function NavBar() {
+  const navigate = useNavigate();
   return (
     <header className="d-flex justify-content-between">
       {/* LOGO */}
@@ -10,7 +12,7 @@ function NavBar() {
       {/* LIST */}
       <ul className="nav d-flex justify-content-center">
         <li className="nav-item">
-          <a className="nav-link custom-link active" href="#">
+          <a className="nav-link custom-link active" onClick={()=>navigate("/")}>
             Home
           </a>
         </li>
@@ -25,8 +27,8 @@ function NavBar() {
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link custom-link" href="#">
-            Review
+          <a className="nav-link custom-link" onClick={()=>navigate("/Guide")}>
+            Guide
           </a>
         </li>
         <li className="nav-item">
