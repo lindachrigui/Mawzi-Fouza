@@ -3,6 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color: #1F1F1F;
 }
 
 .Msg1{

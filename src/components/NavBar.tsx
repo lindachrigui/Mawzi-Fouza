@@ -22,8 +22,8 @@ function NavBar() {
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link custom-link" href="#">
-            Trainers
+          <a className="nav-link custom-link" onClick={()=>navigate("/Offers")}>
+           Offers
           </a>
         </li>
         <li className="nav-item">

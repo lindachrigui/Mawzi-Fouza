@@ -1,7 +1,7 @@
 import "./Footer.css"
 
 function Footer(){
-    return(<div className="Footer">
+    return(<footer className="Footer">
             <div className="Msg1"><div className="Msg11">Ready for  
             <span> awesome</span> Life?</div>
             <div className="Msg12"><img className="badge-icon" src="./Vector.png" />Info@bravestore.com</div ></div>
@@ -18,7 +18,7 @@ function Footer(){
             </div>
             <div className="Msg32"><span>Contact us :</span ><div className="Msg23"> +91 9876543210 </div></div></div>
 
-    </div>
+    </footer>
     );
 }
 

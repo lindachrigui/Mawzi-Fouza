@@ -106,9 +106,9 @@ function App() {
           imgSrc={item.imgSrc} 
         />
       ))}
-      <footer>
+      
       <Footer/>
-      </footer>
+      
       
     </>
   );
