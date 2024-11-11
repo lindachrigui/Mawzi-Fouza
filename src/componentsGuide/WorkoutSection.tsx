@@ -1,5 +1,5 @@
 import Schedule from "./Schedule";
-import "./Schedule.css"
+import "./Schedule.css";
 
 type Schedule1 = {
   img: string;
@@ -7,8 +7,6 @@ type Schedule1 = {
   period: string;
   message: string;
 };
-
-
 
 type WorkoutSectionProp = {
   title: string;
@@ -33,12 +31,16 @@ function WorkoutSection({
         <button className="Boutton1">{buttonText}</button>
         {/* Pass the Schedules array directly */}
         <div className="imgSchedule">
-        {ScheduleData.map((item, index) => (
-            <Schedule img= {item.img}
-            date={item.date}
-            period={item.period}
-            message={item.message} />
-        ))}</div>
+          {ScheduleData.map((item, index) => (
+            <Schedule
+              key={index}
+              img={item.img}
+              date={item.date}
+              period={item.period}
+              message={item.message}
+            />
+          ))}
+        </div>
       </div>
       <img className="img2" src={imgSrc} />
     </section>

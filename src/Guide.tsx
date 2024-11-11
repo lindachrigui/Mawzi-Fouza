@@ -1,9 +1,12 @@
 import NavBar from "./components/NavBar";
-import Workout from "./components1/Workout";
+import Workout from "./componentsGuide/Workout";
 import "./Guide.css";
-import Schedule from "./components1/Schedule";
-import WorkoutSection from "./components1/WorkoutSection";
-import Footer from "./components1/Footer";
+import WorkoutSection from "./componentsGuide/WorkoutSection";
+import Footer from "./components/Footer";
+import { PopupProvider } from "./components/PopupContext";
+import PopUp from "./components/PopUp";
+import "./components/PopUp.css";
+import PopUp1 from "./components/PopUp1";
 
 type Schedule1 = {
   img: string;
@@ -12,13 +15,11 @@ type Schedule1 = {
   message: string;
 };
 
-
-
 type WorkoutSectionProp = {
   title: string;
   description: string;
   buttonText: string;
-  ScheduleData: Schedule1[];  // Correct the type here to match the array of schedules
+  ScheduleData: Schedule1[]; // Correct the type here to match the array of schedules
   imgSrc?: string;
 };
 
@@ -30,58 +31,138 @@ function App() {
   const list = [
     {
       title: "Beginner Friendly",
-      description: "Looking to get started on your fitness journey? Try one of these beginner-friendly programs! These have shorter time commitments or have low-impact alternatives.",
+      description:
+        "Looking to get started on your fitness journey? Try one of these beginner-friendly programs! These have shorter time commitments or have low-impact alternatives.",
       buttonText: "1938+ People Tried",
       ScheduleData: [
-        { img: "/Image27.png", date: "14 days", period: "20-40mins", message: "2023 Get Abs Challenge" },
-        { img: "/Image27.png", date: "14 days", period: "20-40mins", message: "2023 Get Abs Challenge" },
-        { img: "/Image27.png", date: "14 days", period: "20-40mins", message: "2023 Get Abs Challenge" }
+        {
+          img: "/Image27.png",
+          date: "14 days",
+          period: "20-40mins",
+          message: "2023 Get Abs Challenge",
+        },
+        {
+          img: "/Image27.png",
+          date: "14 days",
+          period: "20-40mins",
+          message: "2023 Get Abs Challenge",
+        },
+        {
+          img: "/Image27.png",
+          date: "14 days",
+          period: "20-40mins",
+          message: "2023 Get Abs Challenge",
+        },
       ],
-      imgSrc: "/Message 21.png"
+      imgSrc: "/Message 21.png",
     },
     {
       title: "Beginner Friendly",
-      description: "Looking to get started on your fitness journey? Try one of these beginner-friendly programs! These have shorter time commitments or have low-impact alternatives.",
+      description:
+        "Looking to get started on your fitness journey? Try one of these beginner-friendly programs! These have shorter time commitments or have low-impact alternatives.",
       buttonText: "1938+ People Tried",
       ScheduleData: [
-        { img: "/Image27.png", date: "14 days", period: "20-40mins", message: "2023 Get Abs Challenge" },
-        { img: "/Image27.png", date: "14 days", period: "20-40mins", message: "2023 Get Abs Challenge" },
-        { img: "/Image27.png", date: "14 days", period: "20-40mins", message: "2023 Get Abs Challenge" }
+        {
+          img: "/Image27.png",
+          date: "14 days",
+          period: "20-40mins",
+          message: "2023 Get Abs Challenge",
+        },
+        {
+          img: "/Image27.png",
+          date: "14 days",
+          period: "20-40mins",
+          message: "2023 Get Abs Challenge",
+        },
+        {
+          img: "/Image27.png",
+          date: "14 days",
+          period: "20-40mins",
+          message: "2023 Get Abs Challenge",
+        },
       ],
-      imgSrc: "/Message 21.png"
+      imgSrc: "/Message 21.png",
     },
     {
       title: "Beginner Friendly",
-      description: "Looking to get started on your fitness journey? Try one of these beginner-friendly programs! These have shorter time commitments or have low-impact alternatives.",
+      description:
+        "Looking to get started on your fitness journey? Try one of these beginner-friendly programs! These have shorter time commitments or have low-impact alternatives.",
       buttonText: "1938+ People Tried",
       ScheduleData: [
-        { img: "/Image27.png", date: "14 days", period: "20-40mins", message: "2023 Get Abs Challenge" },
-        { img: "/Image27.png", date: "14 days", period: "20-40mins", message: "2023 Get Abs Challenge" },
-        { img: "/Image27.png", date: "14 days", period: "20-40mins", message: "2023 Get Abs Challenge" }
+        {
+          img: "/Image27.png",
+          date: "14 days",
+          period: "20-40mins",
+          message: "2023 Get Abs Challenge",
+        },
+        {
+          img: "/Image27.png",
+          date: "14 days",
+          period: "20-40mins",
+          message: "2023 Get Abs Challenge",
+        },
+        {
+          img: "/Image27.png",
+          date: "14 days",
+          period: "20-40mins",
+          message: "2023 Get Abs Challenge",
+        },
       ],
-      imgSrc: "/Message 21.png"
+      imgSrc: "/Message 21.png",
     },
     {
       title: "Beginner Friendly",
-      description: "Looking to get started on your fitness journey? Try one of these beginner-friendly programs! These have shorter time commitments or have low-impact alternatives.",
+      description:
+        "Looking to get started on your fitness journey? Try one of these beginner-friendly programs! These have shorter time commitments or have low-impact alternatives.",
       buttonText: "1938+ People Tried",
       ScheduleData: [
-        { img: "/Image27.png", date: "14 days", period: "20-40mins", message: "2023 Get Abs Challenge" },
-        { img: "/Image27.png", date: "14 days", period: "20-40mins", message: "2023 Get Abs Challenge" },
-        { img: "/Image27.png", date: "14 days", period: "20-40mins", message: "2023 Get Abs Challenge" }
+        {
+          img: "/Image27.png",
+          date: "14 days",
+          period: "20-40mins",
+          message: "2023 Get Abs Challenge",
+        },
+        {
+          img: "/Image27.png",
+          date: "14 days",
+          period: "20-40mins",
+          message: "2023 Get Abs Challenge",
+        },
+        {
+          img: "/Image27.png",
+          date: "14 days",
+          period: "20-40mins",
+          message: "2023 Get Abs Challenge",
+        },
       ],
-      imgSrc: "/Message 21.png"
+      imgSrc: "/Message 21.png",
     },
     {
       title: "Beginner Friendly",
-      description: "Looking to get started on your fitness journey? Try one of these beginner-friendly programs! These have shorter time commitments or have low-impact alternatives.",
+      description:
+        "Looking to get started on your fitness journey? Try one of these beginner-friendly programs! These have shorter time commitments or have low-impact alternatives.",
       buttonText: "1938+ People Tried",
       ScheduleData: [
-        { img: "/Image27.png", date: "14 days", period: "20-40mins", message: "2023 Get Abs Challenge" },
-        { img: "/Image27.png", date: "14 days", period: "20-40mins", message: "2023 Get Abs Challenge" },
-        { img: "/Image27.png", date: "14 days", period: "20-40mins", message: "2023 Get Abs Challenge" }
+        {
+          img: "/Image27.png",
+          date: "14 days",
+          period: "20-40mins",
+          message: "2023 Get Abs Challenge",
+        },
+        {
+          img: "/Image27.png",
+          date: "14 days",
+          period: "20-40mins",
+          message: "2023 Get Abs Challenge",
+        },
+        {
+          img: "/Image27.png",
+          date: "14 days",
+          period: "20-40mins",
+          message: "2023 Get Abs Challenge",
+        },
       ],
-      imgSrc: "/Message 21.png"
+      imgSrc: "/Message 21.png",
     },
     // Other items follow the same structure...
   ];
@@ -89,27 +170,30 @@ function App() {
   return (
     <>
       <section className="Section">
-        <NavBar />
-        <div className="Div1 padd">
-          <h1 className="Title1">Free Workout Programs</h1>
-          <Workout />
-        </div>
-        <img className="img2" src="/Message 21.png" alt="Workout" />
+        <PopupProvider>
+          <NavBar />
+
+          <div className="Div1 padd">
+            <h1 className="Title1">Free Workout Programs</h1>
+            <Workout />
+          </div>
+          <img className="img2" src="/Message 21.png" alt="Workout" />
+
+          <PopUp />
+        </PopupProvider>
       </section>
       {list.map((item, index) => (
-        <WorkoutSection 
-          key={index} 
-          title={item.title} 
-          description={item.description} 
-          buttonText={item.buttonText} 
+        <WorkoutSection
+          key={index}
+          title={item.title}
+          description={item.description}
+          buttonText={item.buttonText}
           ScheduleData={item.ScheduleData} // Ensure the correct name here
-          imgSrc={item.imgSrc} 
+          imgSrc={item.imgSrc}
         />
       ))}
-      
-      <Footer/>
-      
-      
+
+      <Footer />
     </>
   );
 }
