@@ -5,9 +5,8 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    perspective: 1000px; /* Adds a bit of 3D effect */
-
-    margin-top: 3%;
+    perspective: 1000px;
+    margin-top: 6%;
   }
   
   .image-container {
@@ -64,4 +63,20 @@
   .right-image .text-overlay {
     opacity: 0;
   }
-  
+
+
+  @media (min-width: 1800px) {
+    .carousel-container {
+      margin-top: 6%;
+    }
+    
+    .image-container {
+      width: 353.75px;
+      height: 505px;
+    }
+    
+    .center-image {
+      width: 446.25px;
+      height: 628.75px;
+    }
+  }

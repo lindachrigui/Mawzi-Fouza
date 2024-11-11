@@ -3,30 +3,33 @@
 .card-elements {
     display: flex;
     flex-wrap: wrap;
-    gap: 4rem;
+    column-gap: 9rem;
+    row-gap: 5rem;
     justify-content: space-around;
     padding: 3%;
-    background-color: aqua;
+    background-color: #1F1F1F;
 }
 
 .ProductList {
-    background-color: red;
-    padding-left: 2%;
-    padding-right: 2%;
+    background-color: #1F1F1F;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-bottom: 2%;
+    padding-top: 2%;
 }
 
 .ProductList h1 {
-    margin-left: 3.5%;
+    margin-left: 1%;
     font-size: 40px;
+    color:#eeeeee;
 }
 
 .card {
-    width: 22.5%;
+    width: 23.5%;
     height: 35;
     background-color: #f8f8f8;
     padding: 2rem;
-    border-radius: 30px;
+    border-radius: 25px !important;
     text-align: center;
     border: none;
     display: flex;
@@ -36,8 +39,10 @@
 }
 
 .card img {
-    width: 80%;
-    height: auto;
+    max-width: 80%;
+    max-height: 230px;
+    min-width: 130px;
+    height:auto;
     border-radius: 10px;
     display: block;
     margin: 0 auto;
@@ -65,3 +70,4 @@
     width: 70%;
     margin: 0 auto;
 }
+
