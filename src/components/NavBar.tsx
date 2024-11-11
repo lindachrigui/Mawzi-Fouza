@@ -3,6 +3,7 @@ import Logo from "../assets/images/Vector.png";
 
 function NavBar() {
   return (
+    <div className="NavBar">
     <header className="d-flex justify-content-between">
       {/* LOGO */}
       <img src={Logo} alt="Logo" />
@@ -39,6 +40,7 @@ function NavBar() {
       {/* JOIN US BUTTON */}
       <button className="custom-button">Join Now</button>
     </header>
+    </div>
   );
 }
 export default NavBar;

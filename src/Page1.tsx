@@ -1,9 +1,9 @@
 import HomePage from "./components/HomePage";
-import "./App.css";
+import "./Page1.css";
 import Figures from "./components/Figures";
 import WhyChooseUs from "./components/WhyChooseUs";
 import Classes from "./components/Classes";
-function App() {
+function Page1() {
   return (
     <div>
       <section className="hero1">
@@ -22,4 +22,4 @@ function App() {
   );
 }
 
-export default App;
+export default Page1;

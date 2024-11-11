@@ -10,7 +10,7 @@ interface ImageData {
 const ImageCarousel: React.FC = () => {
   const images: ImageData[] = [
     { src: "image1.png", text: "Text 1" },
-    { src: "image1.png", text: "Text 2" },
+    { src: "image2.png", text: "Text 2" },
     { src: "image1.png", text: "Text 3" },
     { src: "image1.png", text: "Text 4" },
     { src: "image1.png", text: "Text 5" },
