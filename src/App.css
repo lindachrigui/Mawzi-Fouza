@@ -5,15 +5,12 @@
     background-repeat: no-repeat;
     background-position: center;
     min-height: 100vh;
-    padding-top: .5%;
+    padding: 0 !important;
 
 
 }
 
-body{
-    margin: 0;
-    padding: 0;
-}
+
 
 .hero2{
 

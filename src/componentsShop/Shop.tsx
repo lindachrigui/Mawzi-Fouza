@@ -1,12 +1,14 @@
 import NavBar from "../components/NavBar";
+import { PopupProvider } from "../components/PopupContext";
 import Products from "./Products";
 import "./Shop.css";
 
 function Shop() {
   return (
-    <>
+    <PopupProvider>
       <div className="Shop">
         <NavBar />
+
         <h1 className="ShopWelcome">WELCOME TO OUR MINI SHOP</h1>
         <p>
           Explore our collection of fitness essentials online, and then visit
@@ -16,7 +18,7 @@ function Shop() {
         <Products />
         <div style={{ height: "100px" }}></div>
       </div>
-    </>
+    </PopupProvider>
   );
 }
 export default Shop;

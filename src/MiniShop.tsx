@@ -1,18 +1,17 @@
 import HomePage from "./components/HomePage";
-import "./Page2.css";
+import "./MiniShop.css";
 import Figures from "./components/Figures";
 import WhyChooseUs from "./components/WhyChooseUs";
 import Classes from "./components/Classes";
 import Shop from "./componentsShop/Shop";
-function Page1() {
+function MiniShop() {
   return (
-    <div>   
+    <div>
       <section>
         <Shop />
       </section>
-
     </div>
   );
 }
 
-export default Page1;
+export default MiniShop;
