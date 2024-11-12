@@ -1,4 +1,6 @@
 import NavBar from "../components/NavBar";
+import PopUp1 from "../components/PopUp1";
+import PopUp from "../components/PopUp";
 import { PopupProvider } from "../components/PopupContext";
 import Products from "./Products";
 import "./Shop.css";
@@ -18,6 +20,8 @@ function Shop() {
         <Products />
         <div style={{ height: "100px" }}></div>
       </div>
+      <PopUp />
+      <PopUp1 />
     </PopupProvider>
   );
 }

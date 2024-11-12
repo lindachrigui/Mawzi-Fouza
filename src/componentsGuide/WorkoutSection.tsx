@@ -24,13 +24,13 @@ function WorkoutSection({
   imgSrc,
 }: WorkoutSectionProp) {
   return (
-    <section className="Section">
-      <div className="Div1">
-        <h1 className="Title2">{title}</h1>
-        <p className="Par1">{description}</p>
-        <button className="Boutton1">{buttonText}</button>
+    <section className="YSection">
+      <div className="YDiv1">
+        <h1 className="YTitle2">{title}</h1>
+        <p className="YPar1">{description}</p>
+        <button className="YBoutton1">{buttonText}</button>
         {/* Pass the Schedules array directly */}
-        <div className="imgSchedule">
+        <div className="YimgSchedule">
           {ScheduleData.map((item, index) => (
             <Schedule
               key={index}
@@ -42,7 +42,7 @@ function WorkoutSection({
           ))}
         </div>
       </div>
-      <img className="img2" src={imgSrc} />
+      <img className="Yimg2" src={imgSrc} />
     </section>
   );
 }

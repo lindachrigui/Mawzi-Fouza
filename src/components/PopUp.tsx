@@ -1,9 +1,24 @@
 import "./PopUp.css";
 import { usePopup } from "./PopupContext";
-import { PopupProvider } from "./PopupContext";
+
+function getClassName(isActive: boolean): string {
+  return isActive ? "boutton1 active" : " boutton1 inactive";
+}
+function getClassName1(isActive: boolean): string {
+  return isActive ? "boutton2 inactive" : "boutton2 active";
+}
 
 function PopUp() {
-  const { isPopupVisible, closePopup } = usePopup();
+  const {
+    isMember,
+    changeStatus1,
+    changeStatus2,
+    isPopup1Visible,
+    togglePopup1,
+    isPopupVisible,
+    closePopup,
+    closePopup1,
+  } = usePopup();
 
   if (!isPopupVisible) return null;
 
@@ -18,10 +33,24 @@ function PopUp() {
           ✕
         </button>
         <div className="Head">
-          <img src="./logo.png" alt="logo" />
+          <img src="./Logo.png" alt="logo" />
           <div className="bouttons">
-            <a className="boutton1">Member</a>
-            <a className="boutton2">Staff</a>
+            <a
+              className={getClassName(isMember)}
+              onClick={() => {
+                changeStatus1();
+              }}
+            >
+              Member
+            </a>
+            <a
+              className={getClassName1(isMember)}
+              onClick={() => {
+                changeStatus2();
+              }}
+            >
+              Staff
+            </a>
           </div>
         </div>
         <div className="Form1">
@@ -42,9 +71,19 @@ function PopUp() {
               <label htmlFor="keep-logged-in">Keep me logged in</label>
             </div>
 
-            <div className="create-account">
-              Need an account? <a href="#">Create one</a>
-            </div>
+            {isMember && (
+              <div className="create-account">
+                Need an account?{" "}
+                <a
+                  onClick={() => {
+                    closePopup();
+                    togglePopup1();
+                  }}
+                >
+                  Create one
+                </a>
+              </div>
+            )}
 
             <button type="submit" className="submit-button">
               Sign in

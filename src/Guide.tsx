@@ -169,17 +169,18 @@ function App() {
 
   return (
     <>
-      <section className="Section">
+      <section className="YSection">
         <PopupProvider>
           <NavBar />
 
-          <div className="Div1 padd">
-            <h1 className="Title1">Free Workout Programs</h1>
+          <div className="YDiv1 padd">
+            <h1 className="YTitle1">Free Workout Programs</h1>
             <Workout />
           </div>
-          <img className="img2" src="/Message 21.png" alt="Workout" />
+          <img className="Yimg2" src="/Message 21.png" alt="Workout" />
 
           <PopUp />
+          <PopUp1 />
         </PopupProvider>
       </section>
       {list.map((item, index) => (

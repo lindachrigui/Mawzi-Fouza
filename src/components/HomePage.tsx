@@ -1,7 +1,8 @@
 import NavBar from "./NavBar";
 
 import { PopupProvider } from "./PopupContext";
-import PopUp from "./PopUp1";
+import PopUp from "./PopUp";
+import PopUp1 from "./PopUp1";
 
 function HomePage() {
   return (
@@ -14,6 +15,7 @@ function HomePage() {
       </div>
 
       <PopUp />
+      <PopUp1 />
     </PopupProvider>
   );
 }

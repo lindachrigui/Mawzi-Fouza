@@ -1,52 +1,41 @@
-import React from 'react';
+import React from "react";
 
-import "./Card.css"
+import "./Card.css";
 
-const Card = () => {
+interface card1 {
+  plan: string;
+  prix: string;
+  type: string;
+  info: string;
+  list: string[];
+}
+
+const Card = ({ plan, prix, type, info, list }: card1) => {
   return (
-    
-      <div className="plan">
-      
-        <div className="inner">
-        <h1 className="titl">Premium Plan</h1>
-          <span className="pricing1">
-            <span className='pri'>
-              $49<small>/Month</small>
-            </span>
+    <div className="plan">
+      <div className="inner">
+        <h1 className="titl">{plan}</h1>
+        <span className="pricing1">
+          <span className="pri">
+            {prix}
+            <small>/{type}</small>
           </span>
-          
-          <p className="info">This plan is for those who have a team already and running a large business.</p>
-          <ul className="features">
-            <li>
-              
-            Plan team meetings
-            </li>
-            <li>
-              
-            Plan team meetings
-            </li>
-            <li>
-              
-            Plan team meetings
-            </li>
-            <li>
-              
-            Plan team meetings
-            </li>
-            <li>
-              
-            Plan team meetings
-            </li>
-          </ul>
-          <div className="action">
-            <a className="button" href="#">
-              Choose plan
-            </a>
-          </div>
+        </span>
+
+        <p className="info">{info}</p>
+        <ul className="features">
+          {list.map((item) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+        <div className="action">
+          <a className="button" href="#">
+            Choose plan
+          </a>
         </div>
       </div>
-    
+    </div>
   );
-}
+};
 
 export default Card;

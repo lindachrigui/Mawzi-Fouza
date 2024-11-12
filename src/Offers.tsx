@@ -9,16 +9,13 @@ import PopUp1 from "./components/PopUp1";
 
 function Offers() {
   return (
-    <section
-      className="Page1"
-      style={{ maxHeight: "100vh", backgroundColor: "#eeeeee" }}
-    >
+    <section className="YPage1">
       <PopupProvider>
         <NavBar />
 
         <Offer />
         <Footer />
-
+        <PopUp />
         <PopUp1 />
       </PopupProvider>
     </section>

@@ -1,6 +1,5 @@
 import "./Workout.css";
 
-
 type Qualification = {
   text: string;
   imgSrc?: string;
@@ -21,7 +20,7 @@ function Workout() {
       imgSrc: "/Yoga.png",
     },
     {
-      text:"Start Now",
+      text: "Start Now",
       imgSrc: "/Cardio 1.png",
     },
     {
@@ -35,13 +34,16 @@ function Workout() {
   ];
 
   return (
-    <div className="Div3">
+    <div className="YDiv3">
       {qualifications.map((item, index) => (
-        <div key={index} className="Workout1">
-          <div className="image-container">
-          <img src={item.imgSrc} alt="Qualification" className="img1" />
-          <div className="blur-overlay"><div className="overlay-text">Yassine Arfaoui</div></div></div>
-          <button className="Boutton">{item.text}</button>
+        <div key={index} className="YWorkout1">
+          <div className="Yimage-container">
+            <img src={item.imgSrc} alt="Qualification" className="Yimg1" />
+            <div className="Yblur-overlay">
+              <div className="Yoverlay-text">Yassine Arfaoui</div>
+            </div>
+          </div>
+          <button className="YBoutton">{item.text}</button>
         </div>
       ))}
     </div>

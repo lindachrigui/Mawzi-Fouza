@@ -1,15 +1,15 @@
 
 
-.Section{
+.YSection{
     background-color: #EEEEEE !important;
     height :auto;
     
 }
 
-.padd{
+.Ypadd{
     padding-top: 3%;
 }
-.Div1{
+.YDiv1{
     
     padding-right: 8%;
     padding-left: 8%;
@@ -18,23 +18,23 @@
 }
 
 
-.Title1{
+.YTitle1{
     color: #FF2A00 !important  ;
     text-align: center;
     margin-bottom: 2%;
     font-family: outfit;
     font-weight: 300;
 }
-.Title1{
+.YTitle1{
     margin-bottom: 2%;
     font-family: outfit;
     font-weight: 300;
 }
-.par1{
+.Ypar1{
     font-family: outfit;
     font-weight: 150;
 }
-.Boutton1 {
+.YBoutton1 {
     color: #FDF2F2;
     background-color: #170101;
     border-radius: 30px;
@@ -50,13 +50,13 @@
 
  }
 
-.Div2{
+.YDiv2{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
    
 }
-.img2{
+.Yimg2{
     height: 30px;
     height: 30px;
     margin-top:3%;

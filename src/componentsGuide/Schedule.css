@@ -1,5 +1,5 @@
 
-.imgSchedule{
+.YimgSchedule{
     padding-top: 4%;
    
     display : flex ;
@@ -9,13 +9,13 @@
     
 }
 
-.imgSchedule1{
+.YimgSchedule1{
     height: 70vh;
     width: 30%;
     min-width: 30vh;
     border-radius: 30px;
 }
-.msg1_Schedule{
+.Ymsg1_Schedule{
     
     width:62%;
     margin-top: 90%;
@@ -31,19 +31,19 @@
     flex-wrap: wrap;
 }
 
-.msg2_Schedule{
+.Ymsg2_Schedule{
     font-family: Outfit;
     font-size: 14px;
     font-weight: 400;
-    line-height: 17.64px;
+    line-height: 17.Y64px;
     text-align: left;
     color: #FFFFFF;
-    margin-left: 0.5em;
+    margin-left: 0.Y5em;
     
 
 }
 
-.imgSchedule{
+.YimgSchedule{
     display : flex ;
     flex-direction: row;
     justify-content: space-between;
@@ -51,14 +51,14 @@
     flex-wrap: wrap;
 
 }
-.timeSchedule{
+.YtimeSchedule{
     display : flex ;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     
 }
-.dateSchedule1{
+.YdateSchedule1{
     background-color:#FF2A00 ;
     margin-left: 2%;
     border-radius: 15px;
@@ -68,7 +68,7 @@
     align-items: center;
     
 }
-.dateSchedule2{
+.YdateSchedule2{
     background-color:#FF2A00 ;
     border-radius: 15px;
     margin-top: 3%;
@@ -78,20 +78,20 @@
     align-items: center;
 }
 
-.msg1_Schedule h5{
+.Ymsg1_Schedule h5{
     color :black !important;
     
     text-align: center;
     font-family: Outfit;
 font-size: 14px;
 font-weight: 400;
-line-height: 17.64px;
+line-height: 17.Y64px;
 
 
 }
 
 
-.badge-icon {
-    margin-right: 0.5em;
+.Ybadge-icon {
+    margin-right: 0.Y5em;
     font-size: 14px;             /* Icon size */
 }
