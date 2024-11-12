@@ -19,7 +19,7 @@ font-style: normal;
 
 .card{
     background-color: #1f1f1f !important;
-    color:rgb(255, 255, 255);
+    color:rgb(255, 255, 255) !important;
     border: none !important;
 }
 
