@@ -58,9 +58,15 @@
     font-size: 18px;
     font-weight: 600;
     font-family: Signika-SemiBold;
+    max-height:50px ;
   }
   
   .custom-button:hover {
     background-color: #797979; /* Darken background color on hover */
   }
 
+.NavBar{
+  margin-left:3%;
+  margin-right:3%;
+  padding-top:1%
+}
