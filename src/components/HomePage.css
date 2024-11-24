@@ -1,0 +1,18 @@
+h1{
+    h1 {
+        width: 645px; /* Largeur de 645px */
+        height: auto; /* Hauteur automatique selon le contenu */
+        position: absolute; /* Position absolue */
+        left: 453px; /* Décalage de 453px de la gauche */
+        top: 62px; /* Décalage de 62px du haut */
+        opacity: 0.9; /* Opacité à 90% */
+        font-family: 'Outfit', sans-serif; /* Police 'Signika' */
+        font-weight: mixed; /* Police en gras */
+        font-size: 30px; /* Taille de police de 30px (ajustée pour un texte plus long) */
+        line-height: 1.5; /* Hauteur de ligne ajustée pour espacer le texte */
+        letter-spacing: 0%; /* Pas d'espacement entre les lettres */
+        text-align: center; /* Texte centré */
+        color: #1F1F1F; /* Couleur du texte */
+      }
+       
+}

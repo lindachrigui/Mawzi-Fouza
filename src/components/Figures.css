@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Signika-Bold';
+    src: url('../assets/fonts/Signika/static/Signika-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+font-family: 'Signika-SemiBold';
+src: url('../assets/fonts/Signika/static/Signika-SemiBold.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    background-color: #1f1f1f;
+    padding: 3%;
+}
+
+.cardFigures{
+    background-color: #1f1f1f !important;
+
+    border: none !important;
+}
+
+.cardFigures h2{
+    font-family: Signika-Bold;
+    font-size: 35px;
+    color:rgb(255, 255, 255)
+}
+
+.cardFigures p{
+    font-family: Signika-SemiBold;
+    font-size: 16px;
+    color:rgb(255, 255, 255)
+}
