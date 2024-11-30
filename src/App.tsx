@@ -12,7 +12,7 @@ function App() {
       <section>
         <Figures />
       </section>
-      <section className="hero2">
+      <section className="hero2" id="about">
         <WhyChooseUs />
       </section>
       <section className="hero3">

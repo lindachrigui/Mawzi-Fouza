@@ -24,7 +24,7 @@ function NavBar() {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link custom-link" onClick={() => navigate("/")}>
+            <a className="nav-link custom-link" href="#about">
               About
             </a>
           </li>
